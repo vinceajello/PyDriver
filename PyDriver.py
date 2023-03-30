@@ -1,9 +1,9 @@
 import pygame
 import random
 
-import PyDriverUtils as utils
-from PyRoad import PyRoad
-from PyCar import PyCar
+from src import PyDriverUtils as utils
+from src.PyRoad import PyRoad
+from src.PyCar import PyCar
 
 
 class PyDriver:
@@ -109,7 +109,7 @@ class PyDriver:
 
     def fitness(self):
 
-        best_payers = sorted(self.players, key=lambda x: x.sensors.avoidance)
+        best_payers = sorted(self.players, key=lambda x: x.rect.center[1])
         self.best_car = best_payers[0]
         return best_payers[0]
 

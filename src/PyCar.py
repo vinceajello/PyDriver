@@ -2,9 +2,9 @@
 import pygame
 import math
 
-from PySensors import PySensors
-from PyHitbox import PyHitbox
-from PyBrain import PyNetwork
+from src.PySensors import PySensors
+from src.PyHitbox import PyHitbox
+from src.PyBrain import PyNetwork
 
 
 class PyCar(pygame.sprite.Sprite):

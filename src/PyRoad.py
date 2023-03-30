@@ -1,7 +1,7 @@
 import pygame
 import math
 
-import PyDriverUtils as utils
+from src import PyDriverUtils as utils
 
 
 class PyRoad(pygame.sprite.Sprite):

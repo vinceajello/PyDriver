@@ -1,7 +1,7 @@
 
 import random
 
-import PyDriverUtils as utils
+from src import PyDriverUtils as utils
 
 class PyNetwork:
 
